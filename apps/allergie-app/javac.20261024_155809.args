@@ -1,0 +1,14 @@
+-Xlint:-options
+-source
+8
+-target
+8
+-bootclasspath
+/tmp/claude-0/-home-user-studiumunterlagen-github-io/7b0cdb7c-c08d-50f7-9e2c-5aa2da3dd784/scratchpad/tc/android-all.jar
+-d
+/tmp/claude-0/-home-user-studiumunterlagen-github-io/7b0cdb7c-c08d-50f7-9e2c-5aa2da3dd784/scratchpad/tc/out
+/tmp/claude-0/-home-user-studiumunterlagen-github-io/7b0cdb7c-c08d-50f7-9e2c-5aa2da3dd784/scratchpad/tc/rstub/de/yusuf/allergiepilot/R.java
+app/src/main/java/de/yusuf/allergiepilot/CheckJobService.java
+app/src/main/java/de/yusuf/allergiepilot/MainActivity.java
+app/src/main/java/de/yusuf/allergiepilot/PollenEngine.java
+app/src/main/java/de/yusuf/allergiepilot/Store.java

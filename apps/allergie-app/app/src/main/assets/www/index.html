@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AllergiePilot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="view"></main>
+
+  <nav class="tabbar" id="tabbar">
+    <button data-tab="heute" class="active"><span class="ico">☀</span><span>Heute</span></button>
+    <button data-tab="kalender"><span class="ico">▦</span><span>Kalender</span></button>
+    <button data-tab="medis"><span class="ico">✚</span><span>Medikamente</span></button>
+    <button data-tab="profil"><span class="ico">●</span><span>Profil</span></button>
+  </nav>
+
+  <div id="sheet" class="sheet hidden">
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="meds.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

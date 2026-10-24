@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'de.yusuf.allergiepilot'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'de.yusuf.allergiepilot'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    // Privat genutzte App: Keystore liegt im Repo, damit Updates ohne Neuinstallation funktionieren.
+    signingConfigs {
+        release {
+            storeFile file('../keystore/allergiepilot.jks')
+            storePassword 'allergiepilot'
+            keyAlias 'allergiepilot'
+            keyPassword 'allergiepilot'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
